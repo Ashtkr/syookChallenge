@@ -1,5 +1,9 @@
 # Link Hosted on Netlify - [syookPoll ](https://syook-frontendsol.netlify.app/)
 
+The UserName and Password are configured locally
+-> Username - amar , akbar, anthony
+-> Password - amar123 , akbar123, anthony123
+
 
 
 # Getting Started with Create React App
