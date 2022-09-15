@@ -1,0 +1,31 @@
+.header-container{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 60px;
+    color: whitesmoke;
+    font-family: roboto;
+    margin: 0;
+}
+
+
+.header-icon{
+    margin-left: 80px;
+}
+
+.header-menu{
+    margin-right: 80px;
+}
+
+.header-menu span{
+    font-size: large;
+    font-weight: 400;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.header-menu span:hover{
+    color: rgb(121, 154, 255)
+}

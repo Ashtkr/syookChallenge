@@ -1,0 +1,50 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.cardItem-container {
+  margin: 15px;
+}
+
+.rank-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.rating-label {
+  margin-top: 20px;
+  font-weight: 500;
+  color: rgb(255, 84, 84);
+}
+
+.rank-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:black;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.rank-item-select{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+.rank-item:hover{
+  color: white;
+  background-color: black;
+}

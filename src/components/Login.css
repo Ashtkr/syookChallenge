@@ -1,36 +1,43 @@
+.login-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+
 .login-app{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 610px;
-  margin-top: 200px;
-  background-color: rgb(241, 241, 241);
-  /* border: 5px solid rgb(192, 185, 185); */
+  background-color: rgb(118, 255, 244);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
   border-radius: 10px;
-  height: 300px;
-  width: 300px;
+  height: 500px;
+  width: 350px;
 }
 
 p{
-  font-size: large;
-  font-weight: 500;
+  color: royalblue;
+  font-size: 30px;
+  font-weight: 800;
   margin: 0px;
   margin-bottom: 5px;
+  font-family: roboto;
 }
 
 .input-container{
-  padding: 10px;
+  padding: 15px;
 }
 
 div input{
-  padding: 10px;
-  width: 200px;
-  border: 1px solid black;
+  padding: 15px;
+  width: 230px;
+  border: 1px solid white;
   border-radius: 5px;
 }
 
 .button-container input{
-  padding: 5px 0px;
+  padding: 4px 0px;
+  margin-top: 10px;
   width: 90px;
   background-color: royalblue;
   color: white;
@@ -43,4 +50,22 @@ div input{
 .button-container input:hover{
   background-color: rgb(27, 76, 221);
   border: 5px solid rgb(27, 76, 221);
+}
+
+@media only screen and (max-width: 600px) {
+  .login-container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .login-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(118, 255, 244);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 400px;
+    width: 300px;
+  }
 }

@@ -1,10 +1,13 @@
 import React from 'react'
 import { useState } from 'react'
 import './Login.css'
+import { useNavigate } from 'react-router-dom';
 import { usersData } from '../usersData/users'
+import Home from './Home';
 
 const Login = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -15,9 +18,10 @@ const Login = () => {
 
     if (userData) {
       if (userData.password !== password.value) {
-        alert("Not correct password")
+        alert("Wrong password!!!")
       } else {
         setIsSubmitted(true);
+        navigate('/home',{replace:true});
       }
     } else {
       alert('Enter Valid Credential')
@@ -25,9 +29,11 @@ const Login = () => {
   };
 
   return (
+    <div className='login-container'>
     <div className='login-app'>
       <center>
-        <p>Login</p>
+        {isSubmitted ? <Home isSubmitted={isSubmitted} setIsSubmitted={isSubmitted}/> : null}
+        <p>Login Your Account</p>
         <form onSubmit={handleSubmit}>
           <div className='input-container'>
             <input type="text" name="username" placeholder='username' required/>
@@ -40,6 +46,7 @@ const Login = () => {
           </div>
         </form>
       </center>
+    </div>
     </div>
   )
 }
